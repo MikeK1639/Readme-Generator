@@ -1,9 +1,9 @@
 const inquirer = require('inquirer');
 const generateMarkdown = require("./utils/generateMarkdown")
 const fs = require("fs")
-// TODO: Create an array of questions for user input
+// All of the necessary requirements for the mods and the markdown page.
 const questions = [ 
-   
+//    This array is what holds all the information for the questions. 
 {type:"input", 
 name:"Title", 
 message:"What is your projects title?"},
@@ -36,7 +36,7 @@ choices: ["MIT" , "Apache" , "BSD" , "Unlicense"]
 
 {type:"input", 
 name:"Test", 
-message:"How would one test the desgin and fucntionality of this project?"},
+message:"How would one test the desgin and functionality of this project?"},
 
 {type:"input", 
 name:"Username", 
@@ -49,20 +49,20 @@ message:"Please enter in your email information here"},
 ]; 
 
 
-// TODO: Create a function to write README file
+//  function to write README file
 function writeToFile(data) {
 const fileName = "./output/README.md";
 fs.writeFile(fileName,data,(err) =>
 err ? console.log(err) : console.log("Success!"))
 }
 
-// TODO: Create a function to initialize app
+// function to initialize app
 function init() {
     inquirer.prompt(questions)
     .then((data) => {
         writeToFile(generateMarkdown(data))
     })
-    // console.log(answers);
+    
     
 }
 
