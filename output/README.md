@@ -1,8 +1,8 @@
-# Mike
-  ![license: MIT](https://img.shields.io/badge/license-MIT-blue)
+# doom
+  [![license: MIT](https://img.shields.io/badge/license-MIT-blue)](https://opensource.org/licenses/MIT/)
   ## Description
   
-  this is a project
+  doom
   
   ## Table of Contents 
   
@@ -12,21 +12,21 @@
   - [Usage](#usage)
   - [Credits](#credits) 
   - [Contribution](#contribution)
-  - [License](#license) 
+  - [License](#License)
   - [Test](#test)
   - [Questions](#questions)
   
   ## Installation
   
-  asd
+  doom
   
   ## Usage
   
-  asd
+  doom
 
   ## Credits
   
- asd
+ doom
   
   ## License
   
@@ -34,14 +34,14 @@
   
   ## How to Contribute
   
-  asd
+  doom
   
   ## Tests
 
-  s
+  dooom
 
   ## Questions 
-github: s 
 
-email: s
+[username: MikeK1639](https://github.com/MikeK1639)
+email: add
   

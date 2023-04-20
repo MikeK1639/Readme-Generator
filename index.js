@@ -36,10 +36,10 @@ choices: ["MIT" , "Apache" , "BSD" , "Unlicense"]
 
 {type:"input", 
 name:"Test", 
-message:"How would one test the desgin and functionality of this project?"},
+message:"How would one test the design and functionality of this project?"},
 
 {type:"input", 
-name:"Username", 
+name:"username", 
 message:"Please enter in you GitHub User name here"},
 
 {type:"input", 

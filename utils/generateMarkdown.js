@@ -4,17 +4,12 @@ function renderLicenseBadge(license) {
   if (license === null){
     license ="";
   } else {
-    return `![license: ${license}](https://img.shields.io/badge/license-${license}-blue)`
+    return `[![license: ${license}](https://img.shields.io/badge/license-${license}-blue)](https://opensource.org/licenses/${license}/)`
   }
 }
 
 // function that returns the license link
 // If there is no license, return an empty string
-function renderLicenseLink(license) {if (license === null){
-  license ="";
-} else {
-  return `[License](#license)`
-}}
 
 // function that returns the license section of README
 // If there is no license, return an empty string
@@ -23,9 +18,13 @@ function renderLicenseSection(license) {if (license === null){
 } else {
   return `## License`
 }}
+ 
+function renderGithubUrl(username) {
+  return `[username: ${username}](https://github.com/${username})`}
+
 
 // Create a function to generate markdown for README
-function generateMarkdown({Title,Description,Installation,Usage,Contribution,Test,Credits,license,Username,Email}) {
+function generateMarkdown({Title,Description,Installation,Usage,Contribution,Test,Credits,license,username,Email}) {
   return `# ${Title}
   ${renderLicenseBadge(license)}
   ## Description
@@ -40,7 +39,7 @@ function generateMarkdown({Title,Description,Installation,Usage,Contribution,Tes
   - [Usage](#usage)
   - [Credits](#credits) 
   - [Contribution](#contribution)
-  - ${renderLicenseLink(license)} 
+  - [License](#License)
   - [Test](#test)
   - [Questions](#questions)
   
@@ -69,8 +68,8 @@ function generateMarkdown({Title,Description,Installation,Usage,Contribution,Tes
   ${Test}
 
   ## Questions 
-github: ${Username} 
 
+${renderGithubUrl(username)}
 email: ${Email}
   
 `
